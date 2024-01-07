@@ -1,0 +1,430 @@
+* {
+
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    overflow: hidden;
+}
+
+.main {
+    display: flex;
+    height: 100vh;
+    color: white;
+    background-color: black;
+    padding: 0.6rem;
+}
+
+.side-bar {
+    width: 380px;
+    border-radius: 1rem;
+    margin-right: 0.5rem;
+    height: 68vh;
+    /* background-color: white; */
+}
+
+.main-content {
+
+    flex: 1;
+    border-radius: 1rem;
+    background-color: #121212;
+    padding: 0 1.5rem 1rem 1.5rem;
+    height: 87vh;
+}
+
+.music-player {
+    background-color: black;
+    position: fixed;
+    bottom: 0px;
+    width: 100%;
+    height: 70px;
+}
+
+.side-bar .nav {
+    background-color: #121212;
+    border-radius: 1rem;
+}
+
+.nav {
+    display: flex;
+    flex-direction: column;
+    height: 100px;
+    padding: 0.5rem 0.75rem;
+}
+
+.nav .nav-option {
+    line-height: 40px;
+    opacity: 0.7;
+}
+
+.nav .nav-option:hover {
+    opacity: 1;
+}
+
+.nav-option i {
+    font-size: 1.5rem;
+    margin-left: 1rem;
+    padding: 0.5rem;
+}
+
+.nav-option a {
+    font-size: 1.1rem;
+}
+
+.library {
+    border-radius: 1rem;
+    height: 100%;
+    background-color: #121212;
+    margin-top: 0.85rem;
+    padding: 0.5rem 0.75rem;
+    border-radius: 0.3px solid white;
+}
+
+/* ... (previous CSS) ... */
+
+.library .options {
+    display: flex;
+    border-radius: 1rem;
+    justify-content: space-between;
+    margin-top: 10px;
+    flex-wrap: wrap;
+    /* Add this line to enable wrapping */
+}
+
+.library .options .lib-option {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    /* Adjust the margin as needed */
+}
+
+.lib-option img {
+    margin-left: 8px;
+}
+
+.lib-option a {
+    margin-left: 16px;
+}
+
+.icons {
+    display: flex;
+    align-items: center;
+}
+
+.icons1 i {
+    font-size: 1.3rem;
+    opacity: 0.7;
+    margin-right: 1rem;
+}
+
+.icons1 i:hover {
+    opacity: 1;
+}
+
+.box {
+    width: 350px;
+    background-color: #242424;
+    height: 8rem;
+    border-radius: 0.75rem;
+    margin: 0.75rem 0.5rem;
+    padding: 0.5rem 1rem;
+}
+
+.box .boxp1 {
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+.box .boxp2 {
+    font-size: 0.95rem;
+    font-weight: 500;
+}
+
+.main-content {
+    overflow: scroll;
+    background-color: rgba(63, 63, 63, 0.281);
+}
+
+.sticky-nav {
+    top: 0px;
+    /* Add this line to set the sticky position from the top */
+    margin: 0;
+    width: 100%;
+    display: flex;
+    position: sticky;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #121212;
+    padding: 1rem 0.5rem;
+    z-index: 10;
+    /* Add this line to ensure it's above other content */
+}
+
+
+.sticky-nav-icons button {
+    margin-right: 1rem;
+}
+
+.sticky-nav-img img {
+    opacity: 0.5;
+}
+
+.sticky-nav-img img:hover {
+    opacity: 1.8;
+}
+
+.sticky-nav-icons i {
+    margin-right: 1rem;
+    opacity: 0.7;
+}
+
+.sticky-nav-icons i:hover {
+    margin-right: 1rem;
+    opacity: 1;
+}
+
+/* @media (max-width : 1000px) {
+    .hide { 
+        display: none;
+    }
+} */
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.cards1-container {
+    display: flex;
+}
+
+.cards2-container {
+    display: flex;
+}
+
+.cards3-container {
+    display: flex;
+}
+
+.cards-container .card {
+    background-color: rgb(18, 17, 17);
+    border-radius: 0.7rem;
+}
+
+.cards-container {
+    display: flex;
+    width: 220px;
+    padding: 0.8rem;
+}
+
+.card img {
+    padding: 1rem;
+}
+
+.card p {
+    padding: 0.3rem;
+    margin-top: -10px;
+}
+
+.card:hover {
+    transition-duration: 0.5s;
+    transition-delay: 0.05s;
+    background-color: rgba(161, 155, 155, 0.217);
+}
+
+p {
+    text-align: center;
+}
+
+.heading {
+    display: flex;
+    justify-content: space-between;
+}
+
+.heading h2:hover {
+    text-decoration: underline;
+}
+
+.heading p:hover {
+    text-decoration: underline;
+}
+
+.lib-option .libi {
+    opacity: 0.7;
+}
+
+.lib-option .libi:hover {
+    opacity: 1.5;
+    margin: 0 50px 0 50px;
+}
+
+.bottom-div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.bottom-div div {
+    margin: 0 5rem 0 2rem;
+}
+
+.bottom-div div h5 {
+    text-align: center;
+}
+
+.bottom-div div a {
+    text-decoration: none;
+    text-align: center;
+    color: white;
+    opacity: 0.4;
+}
+
+.bottom-div div a:hover {
+    opacity: 1.3;
+    text-decoration: underline;
+}
+
+.bottom-div div i:hover {
+    font-size: 1.4rem;
+}
+
+.handles {
+    display: flex;
+    justify-content: space-between;
+}
+
+.handles i {
+    margin: 0 1rem 0 1rem;
+    font-size: larger;
+}
+
+.line-div {
+    display: flex;
+    justify-content: center;
+}
+
+.line-div .line {
+    height: 0.3px;
+    background-color: rgb(89, 85, 85);
+    color: yellow;
+    width: 90%;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 50px 0 50px;
+    margin-top: 1.8rem;
+}
+
+footer .items {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+footer a {
+    text-decoration: none;
+    color: white;
+    opacity: 0.3;
+    margin: 0 0.5rem 0 0.5rem;
+}
+
+footer a:hover {
+    opacity: 1.3;
+}
+
+.music-player {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.music-player .part1 {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    position: relative;
+}
+
+.music-player .part1 div {
+    position: relative;
+    margin: 10px;
+}
+
+.music-player .part1 .imgdiv-info img {
+    height: 3.7rem;
+    border-radius: 0.4rem;
+}
+
+.part1 div {
+    padding: 0.5rem;
+}
+
+.part1 div p:hover {
+    text-decoration: underline;
+}
+
+.music-player .part2 .music-icons {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+}
+
+.music-player .part2 {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.music-player .part2 .music-progress meter {
+    width: 450px;
+    height: 5px;
+}
+
+.part2 div i {
+    opacity: 0.5;
+}
+
+.part2 div i:hover {
+    opacity: 1.2;
+}
+
+.music-icons div {
+    position: relative;
+    margin: 10px;
+}
+
+
+.music-player .part3-icons {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.part3 .part3-icons meter {
+    height: 0.5rem;
+    width: 100px;
+}
+
+.part3 .part3-icons div{
+    margin: 1px;
+}
+
+.part3 .part3-icons span {
+    opacity: 0.6;
+}
+
+.part3 .part3-icons div {
+    padding: 0.8rem;
+}
+
+.part3 .part3-icons span:hover {
+    opacity: 1.2;
+}
+
+/* spotify clone */
